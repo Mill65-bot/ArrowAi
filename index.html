@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Arrow</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header>
+    <div class="brand">Arrow</div>
+    <div class="sub" id="subtitle">Your digital professional</div>
+  </header>
+
+  <nav>
+    <button data-tab="clone" class="on">Clone</button>
+    <button data-tab="worker">Clone worker</button>
+    <button data-tab="connect">Connections</button>
+    <button data-tab="profile">Profile</button>
+  </nav>
+
+  <main>
+    <!-- Clone chat -->
+    <section id="clone" class="tab on">
+      <div id="chat" class="chat"></div>
+      <form id="chatForm" class="composer">
+        <input id="chatInput" placeholder="Talk to your clone…" autocomplete="off" />
+        <button>Send</button>
+      </form>
+    </section>
+
+    <!-- Clone worker -->
+    <section id="worker" class="tab">
+      <p class="muted">Command your clone. It does the parts it can do now, and says clearly when a command needs a tool connected.</p>
+      <form id="cmdForm" class="composer">
+        <input id="cmdInput" placeholder='e.g. "write a login page in React"' autocomplete="off" />
+        <button>Run</button>
+      </form>
+      <div id="worklog"></div>
+    </section>
+
+    <!-- Connections -->
+    <section id="connect" class="tab">
+      <p class="muted">Connect your business tools. Once connected, the clone performs work through them — you approve before anything public.</p>
+      <div id="tools"></div>
+    </section>
+
+    <!-- Profile -->
+    <section id="profile" class="tab">
+      <label>Profession<input id="pf-profession" placeholder="e.g. Marketer, Programmer, Accountant" /></label>
+      <label>Your name<input id="pf-name" placeholder="Used to sign your work" /></label>
+      <label>How you work<textarea id="pf-style" rows="4" placeholder="Your tone, habits, what good looks like"></textarea></label>
+      <label>Rules (one per line)<textarea id="pf-rules" rows="3" placeholder="Things the clone must always follow"></textarea></label>
+      <button id="saveProfile">Save</button>
+      <p class="muted" id="backendNote"></p>
+    </section>
+  </main>
+
+  <script src="/app.js"></script>
+</body>
+</html>

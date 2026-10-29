@@ -1,0 +1,13 @@
+{
+  "name": "arrow-web",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Arrow — a web platform where a professional's clone performs real work through connected tools, with the person approving.",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
